@@ -1,0 +1,69 @@
+[
+    {
+        "art": 1,
+        "img": "/img/sombrero.jpg",
+     "nombre": "SOMBRERO",
+     "importe": 1500
+    },
+     {
+         "art": 2,
+         "img": "/img/anteojos.jpg",
+        "nombre": "ANTEOJOS DE SOL",
+        "importe": 2000
+     },
+     {
+        "art": 3,
+        "img": "/img/aros.jpg",
+        "nombre": "AROS",
+        "importe": 700
+     },
+     {
+        "art": 4,
+        "img": "/img/collares.jpg",
+        "nombre": "COLLAR",
+        "importe": 1200
+     },
+     {
+        "art": 5,
+        "img": "/img/pulseras.jpg",
+        "nombre": "PULSERA",
+        "importe": 1200
+     },
+     {
+        "art": 6,
+        "img": "/img/cinturon.jpg",
+        "nombre": "CINTURON",
+        "importe": 2000
+     },
+     {
+        "art": 7,
+        "img": "/img/llavero.jpg",
+        "nombre": "LLAVERO",
+        "importe": 900
+     },
+     {
+        "art": 12,
+        "img": "/img/cartera.jpg",
+        "nombre": "CARTERA",
+        "importe": 3000
+     },
+     {
+        "art": 13,
+        "img": "/img/billeteras.jpg",
+        "nombre": "BILLETERA",
+        "importe": 1200
+     },
+     {
+        "art": 10,
+        "img": "/img/mochila.jpg",
+        "nombre": "MOCHILA",
+        "importe": 3100
+     },
+        {
+            "art": 11,
+            "img": "/img/ganchos.jpg",
+            "nombre": "ACC. DE PELO",
+            "importe": 500
+        }
+
+]

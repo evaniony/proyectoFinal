@@ -1,11 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair+Display&display=swap');
-
-body{
-    background-color: #181818;
-    font-family: 'Montserrat', sans-serif;
-    color: antiquewhite;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
+body{
+    background-color: #F4D1AE;
+}
 body ul li {
     list-style-type: none;
+}
+
+.container{
+    margin: auto;
+    padding: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    display: grid;
+    grid-template-areas: 
+                         "header header"
+                         "aside section"
+                         "footer footer";
+    
+}
+header{
+    grid-area: header;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px
+    
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+aside{
+    background-color: #f8c899;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    padding:  0px 10px;
+    padding-left: 100px;
+}
+aside ul li{
+    align-items: center;
+}
+
+.section-productos{
+    grid-area: section;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card{
+    background-color: #F4EDEA;
+    border-radius: 10px;
+}
+
+.card h3{
+    padding-left: 5px;
+}
+
+.card p{
+    padding-left: 5px;
+}
+
+button{
+    background-color: #C16200;
+    color: #ffffff;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin: 7px;
+    margin-left: 245px;
+    /* box-shadow: 2px 1px 7px #808080; */
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: #4E0110;
+    color: #F4EDEA;
+    padding: 15px;
+
 }

@@ -1,76 +1,23 @@
 const section = document.querySelector(".section-productos");
 const navCarrito = document.querySelector(".carrito");
-
+let productos = [];
 let carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
-const productos = [
-    {
-        art: 0001,
-     nombre: "SOMBRERO",
-     importe: 1500
-    },
-     {
-         art: 0002,
-        nombre: "ANTEOJOS DE SOL",
-        importe: 2000
-     },
-     {
-        art: 0003,
-        nombre: "AROS",
-        importe: 700
-     },
-     {
-        art: 0004,
-        nombre: "COLLAR",
-        importe: 1200
-     },
-     {
-        art: 0005,
-        nombre: "PULSERA",
-        importe: 1200
-     },
-     {
-        art: 0006,
-        nombre: "CINTURON",
-        importe: 2000
-     },
-     {
-        art: 0006,
-        nombre: "CINTURON",
-        importe: 2000,
-     },
-     {
-    
-        art: 0007,
-        nombre: "LLAVERO",
-        importe: 900,
-     },
-     {
-        art: 0012,
-        nombre: "CARTERA",
-        importe: 3000
-     },
-     {
-        art: 0013,
-        nombre: "BILLETERA",
-        importe: 1200
-     },
-     {
-        art: 0010,
-        nombre: "MOCHILA",
-        importe: 3100
-     },
-        {
-            art: 0011,
-            nombre: "ACC. DE PELO",
-            importe: 500
-        }
-
-]
+const contenido = async () =>{
+    await fetch("js/productos.json")
+    .then((response) => response.json())
+    .then((data) => {
+        productos = data;
+        cards();
+    })
+    //.catch((error) => "aun no esta definido")
+}
+contenido();
 
 function cards(){
     productos.forEach((prod) => {
-        section.innerHTML += `<div>
+        section.innerHTML += `<div class="card">
+                              <img class="images" src="${prod.img}">
                               <h3>${prod.nombre}</h3>
                               <p>$${prod.importe}</p>
                               <button id="btn-agregar${prod.art}">Agregar</button>
@@ -117,6 +64,7 @@ function renderCarrito(){
     pay()
     carrito.forEach((prod) => {
         navCarrito.innerHTML += `<div style = "background-color: red">
+                                 <img class="images aside" src="${prod.img}">
                                  <h3>${prod.nombre}</h3>
                                  <p>$${prod.importe}</p>
                                  <p>Cantidad: ${prod.cantidad}</p>
