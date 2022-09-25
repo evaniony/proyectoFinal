@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script defer src="./js/main2.js"></script>
     <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/d41d80919c.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title> Roma | Tienda de Accesorios </title>
 </head>
 <body>
-    <div class="container">
+    <div class="container bg-gradient-to-b from-gray-400 to-slate-900">
     <header>
         <nav>
-            <h1>ROMA</h1>
-            <p>Tienda de Accesorios</p>
-            <p class="carrito">carrito</p>
+            <!-- <h1>ROMA</h1>
+            <p>Tienda de Accesorios</p> -->
+            <img src="./img/logo.png" alt="logo">
+            <div>
+            <div class="total-carrito"><i class="fa-solid fa-basket-shopping transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:duration-300 ..."></i></div>
+            <div class="carrito">
+            </div>
+            </div>
         </nav>
         <ul>
             <li>Inicio</li>
@@ -24,23 +35,51 @@
             <li>Contacto</li>
         </ul>
     </header>
-    <aside>
-        <div>
+    <aside class="bg-slate-50 px-10 mx-3">
+        <div class="list-prod">
             <ul>
-                <li>Producto</li>
-                <li>Producto</li>
-                <li>Producto</li>
-                <li>Producto</li>
-                <li>Producto</li>
-                <li>Producto</li>
-                <li>Producto</li>
-                <li>Producto</li>
-                <li>Producto</li>
-                <li>Producto</li>
+            <ul> SOMBREROS
+            <li>Sombrero</li>
+            <li>Gorras</li>
+            <li>Boinas</li>
+            </ul>
+            <ul> ANTEOJOS DE SOL
+                <li>Anteojos de sol</li>
+                </ul>
+                <ul> AROS
+                    <li>Aros</li>
+                    <li>Largos</li>
+                    <li>Perlas</li>
+                    <li>Trepadores</li>
+                    </ul>
+                    <ul> COLLARES
+                        <li>Gargantillas</li>
+                        <li>Cadenitas</li>
+                        <li>Set</li>
+                        </ul>
+                        <ul> PULSERAS
+                            <li>brazaletes</li>
+                            <li>Dijes</li>
+                            <li>Pulsera de mostacillas</li>
+                            </ul>
+                            <ul>CINTURONES</ul>
+                            <ul>LLAVEROS</ul>
+                            <ul>CARTERAS</ul>
+                            <ul>BILLETERAS</ul>
+                            <ul>MOCHILAS</ul>
+                            <ul> ACC. DE PELO
+                                <li>Ganchos</li>
+                                <li>Hebillas</li>
+                                <li>Ligas</li>
+                            </ul>
+                            <ul>GUANTES</ul>
             </ul>
         </div>
     </aside>
     <section>
+        <div class="form-buy">
+        </div>
+        <h2 class="font-sans text-5xl text-gray-50 px-10 m-5">PRODUCTOS DESTACADOS</h2>
         <div class="section-productos">
         </div>
     </section>

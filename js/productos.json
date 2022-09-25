@@ -1,7 +1,7 @@
 [
     {
         "art": 1,
-        "img": "/img/sombrero.jpg",
+        "img": "./img/sombrero.jpg",
      "nombre": "SOMBRERO",
      "importe": 1500
     },
@@ -13,19 +13,19 @@
      },
      {
         "art": 3,
-        "img": "/img/aros.jpg",
+        "img": "./img/aros.jpg",
         "nombre": "AROS",
         "importe": 700
      },
      {
         "art": 4,
-        "img": "/img/collares.jpg",
+        "img": "./img/collares.jpg",
         "nombre": "COLLAR",
         "importe": 1200
      },
      {
         "art": 5,
-        "img": "/img/pulseras.jpg",
+        "img": "./img/pulseras.jpg",
         "nombre": "PULSERA",
         "importe": 1200
      },
@@ -64,6 +64,12 @@
             "img": "/img/ganchos.jpg",
             "nombre": "ACC. DE PELO",
             "importe": 500
-        }
+        },
+        {
+         "art": 14,
+         "img": "/img/guantes.jpg",
+         "nombre": "GUANTES",
+         "importe": 900
+     }
 
 ]
